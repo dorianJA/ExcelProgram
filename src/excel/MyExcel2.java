@@ -13,10 +13,10 @@ import java.util.List;
 
 public class MyExcel2 {
     public static void main(String[] args) throws IOException {
-        getFfiles("D:\\Desktop.xlsx","D:\\new.xlsx");
+        addNewFile("D:\\Desktop.xlsx","D:\\new.xlsx");
     }
 
-    public static void getFfiles(String readFile,String WriteFile) throws IOException {
+    public static void addNewFile(String readFile,String WriteFile) throws IOException {
         FileOutputStream fileOutputStream = new FileOutputStream(WriteFile);
         Workbook wb = new XSSFWorkbook(new FileInputStream(readFile));
         int count = 0;
